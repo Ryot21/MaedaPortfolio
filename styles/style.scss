@@ -1,3 +1,4 @@
+//モバイルファースト
 @import 'breakpoints/base';
 
 //スマホ横画面用
@@ -15,4 +16,14 @@
 //PC用
 @media (min-width: 1280px) {
   @import "breakpoints/1280up";
+}
+
+//Retinaディスプレイ・解像度
+@media (min-resolution: 192dpi),
+       (-webkit-min-device-pixel-ratio: 2) {
+        @import "breakpoints/2x"; 
+}
+//印刷用
+@media print {
+  @import "breakpoints/print";
 }
