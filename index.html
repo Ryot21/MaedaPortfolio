@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-  
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MaedaPortfolio</title>
+    <link rel="stylesheet" href="stylesheet/vendors/swiper.min.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div id="content">
+          <div class="hero">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">Blog</div>
+                  <img src="images/Poaner.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">ECサイト</div>
+                  <img src="images/FURIMA.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">message</div>
+                  <img src="images/PHP-twitter.jpg" alt="" />
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="images/arrow.svg">
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/vendors/swiper.min.js"></script>
+    <script src="javascript/libs/hero-slider.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
 </html>
