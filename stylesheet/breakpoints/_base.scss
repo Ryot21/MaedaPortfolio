@@ -60,8 +60,33 @@ img {
   display: flex;
   flex-direction: column;
 }
+.red {
+  color: $cRed;
+}
+.yellow {
+  color: $cYellow;
+}
 
 .about {
+  @extend .content-width;
+  &__inner {
+    @extend .flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $cBgGray;
+  }
+  &__img {
+    height: 365px;
+    & > img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__texts {
+    @extend .pb-s;
+  }
 
 }
 

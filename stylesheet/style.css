@@ -783,7 +783,7 @@ img {
   margin-bottom: 80px !important;
 }
 
-.pb-s, .hobby__container {
+.pb-s, .about__texts, .hobby__container {
   padding-bottom: 16px !important;
 }
 
@@ -791,7 +791,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .hobby__header, .hobby__container {
+.content-width, .about, .hobby__header, .hobby__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -807,7 +807,7 @@ img {
   color: #535353;
 }
 
-.flex, .applications__inner, .hobby__container {
+.flex, .about__inner, .applications__inner, .hobby__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,6 +815,35 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.red {
+  color: #ac3a3a;
+}
+
+.yellow {
+  color: #f4f80d;
+}
+
+.about__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #eaebe6;
+}
+
+.about__img {
+  height: 365px;
+}
+
+.about__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 .applications__item {
@@ -881,13 +910,28 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .applications__inner, .hobby__container {
+  .flex, .about__inner, .applications__inner, .hobby__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .about__inner {
+    padding: 50px;
+  }
+  .about__texts, .about__img {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .about__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .applications__item {
     -ms-flex-preferred-size: 50%;
@@ -928,6 +972,12 @@ Stylesheet: 960px以上のモニタで適用
   .pb-lg {
     padding-bottom: 150px !important;
   }
+  .about__img {
+    height: 400px;
+  }
+  .about__description {
+    margin-bottom: 45px;
+  }
   .hobby__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -948,6 +998,13 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .about__inner {
+    padding: 50px 150px;
+  }
+  .hobby__item {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
