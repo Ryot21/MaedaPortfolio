@@ -767,7 +767,7 @@ img {
   font-size: 17px;
 }
 
-.font-lr, .applications__title {
+.font-lr, .applications__title, .hobby__title {
   font-size: 17px;
 }
 
@@ -775,7 +775,7 @@ img {
   font-size: 25px;
 }
 
-.mb-s, .applications__title {
+.mb-s, .applications__title, .hobby__title {
   margin-bottom: 16px !important;
 }
 
@@ -783,7 +783,7 @@ img {
   margin-bottom: 80px !important;
 }
 
-.pb-s {
+.pb-s, .hobby__container {
   padding-bottom: 16px !important;
 }
 
@@ -791,7 +791,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width {
+.content-width, .hobby__header, .hobby__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -807,7 +807,7 @@ img {
   color: #535353;
 }
 
-.flex, .applications__inner {
+.flex, .applications__inner, .hobby__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,6 +827,46 @@ img {
       flex-basis: 100%;
 }
 
+.hobby__inner {
+  position: relative;
+}
+
+.hobby__inner::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: #eaebe6;
+}
+
+.hobby__container {
+  position: relative;
+  z-index: 2;
+}
+
+.hobby__img {
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.hobby__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.hobby__btn {
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -841,7 +881,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .applications__inner {
+  .flex, .applications__inner, .hobby__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -852,6 +892,15 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .applications__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .hobby__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hobby__item {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
   }
 }
 
@@ -867,7 +916,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-m {
     font-size: 19px;
   }
-  .font-lr, .applications__title {
+  .font-lr, .applications__title, .hobby__title {
     font-size: 23px;
   }
   .font-lg, .main-title {
@@ -878,6 +927,18 @@ Stylesheet: 960px以上のモニタで適用
   }
   .pb-lg {
     padding-bottom: 150px !important;
+  }
+  .hobby__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hobby__img {
+    height: 330px;
+  }
+  .hobby__item {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
   }
 }
 
