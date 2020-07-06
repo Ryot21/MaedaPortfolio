@@ -3,6 +3,40 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+//全てのブラウザに基本適用される設定
 body {
   font-family: 'Amatic SC', 'Noto Sans JP', sans-serif;
+}
+//文字の大きさ
+.font-s {
+  font-size: 14px;
+}
+.font-m {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+//上下の余白
+.mb-s {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-s {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+//左右の余白
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+  
 }
