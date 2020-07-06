@@ -7,6 +7,12 @@ Stylesheet: ベーススタイル
 body {
   font-family: 'Amatic SC', 'Noto Sans JP', sans-serif;
 }
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
 //文字の大きさ
 .font-s {
   font-size: 14px;
@@ -38,5 +44,37 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
-  
+}
+
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.sub-title {
+  @extend .font-s;
+  color: $cSubTitle;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.applications {
+  &__inner {
+    @extend .flex;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__title {
+    @extend .font-lr;
+    @extend .mb-s;
+  }
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
 }
