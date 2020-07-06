@@ -1,6 +1,10 @@
-@import 'modules/mixin';
-@import 'modules/hero-slider';
 @import 'modules/variables';
+@import 'modules/mixin';
+@import 'modules/button';
+@import 'modules/hero-slider';
+@import 'modules/text-animation';
+@import 'modules/image-slide';
+
 @import "breakpoints/base";
 
 @media (min-width: 480px) {
