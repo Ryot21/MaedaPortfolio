@@ -31,6 +31,11 @@ Stylesheet: 960px以上のモニタで適用
   &__description {
     margin-bottom: 45px;
   }
+  &__title {
+    &::before {
+      display: block;
+    }
+  }
 }
 
 
