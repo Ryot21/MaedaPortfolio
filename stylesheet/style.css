@@ -241,6 +241,7 @@
 }
 
 .hero {
+  padding-top: 100px;
   overflow: hidden;
 }
 
@@ -924,7 +925,7 @@ img {
   margin-bottom: 16px !important;
 }
 
-.mb-lg {
+.mb-lg, .about, .applications, .hobby__btn {
   margin-bottom: 80px !important;
 }
 
@@ -932,11 +933,11 @@ img {
   padding-bottom: 16px !important;
 }
 
-.pb-lg {
+.pb-lg, .hero {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .about, .hobby__header, .hobby__container, .footer {
+.content-width, .header__inner, .about, .applications, .hobby__header, .hobby__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -969,10 +970,6 @@ img {
 
 .yellow {
   color: #82ca0e;
-}
-
-#content {
-  padding-top: 110px;
 }
 
 #main-content {
@@ -1084,6 +1081,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.swiper-slide {
+  -webkit-box-shadow: 0 10px 40px -10px black;
+          box-shadow: 0 10px 40px -10px black;
 }
 
 .about__inner {
@@ -1367,10 +1369,10 @@ Stylesheet: 960px以上のモニタで適用
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg {
+  .mb-lg, .about, .applications, .hobby__btn {
     margin-bottom: 150px !important;
   }
-  .pb-lg {
+  .pb-lg, .hero {
     padding-bottom: 150px !important;
   }
   .header__nav {

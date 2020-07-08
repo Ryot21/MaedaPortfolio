@@ -68,7 +68,7 @@ img {
   color: $cYellow;
 }
 #content {
-  padding-top: $navHeight;
+  // padding-top: $navHeight;
 }
 #main-content {
   position: relative;
@@ -157,10 +157,13 @@ main {
   }
 }
 
+.swiper-slide {
+  box-shadow: 0 10px 40px -10px $cBlack;
+}
 
 .about {
   @extend .content-width;
-  
+  @extend .mb-lg;
   &__inner {
     @extend .flex;
     justify-content: space-between;
@@ -216,6 +219,8 @@ main {
 }
 
 .applications {
+  @extend .content-width;
+  @extend .mb-lg;
   &__inner {
     @extend .flex;
   }
@@ -273,6 +278,7 @@ main {
     @extend .mb-s;
   }
   &__btn {
+    @extend .mb-lg;
     text-align: center;
     flex-basis: 100%;
   }

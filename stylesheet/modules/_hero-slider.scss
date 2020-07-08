@@ -38,7 +38,9 @@
 }
 
 .hero {
+  padding-top: 100px;
   overflow: hidden;
+  @extend .pb-lg;
   &__title {
     position: absolute;
     top: 50%;
