@@ -1195,12 +1195,12 @@ main {
   background-color: black;
   -webkit-transform: translateY(-50%) scaleX(0);
           transform: translateY(-50%) scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease 10s;
-  transition: -webkit-transform 0.3s ease 10s;
-  transition: transform 0.3s ease 10s;
-  transition: transform 0.3s ease 10s, -webkit-transform 0.3s ease 10s;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.3s ease 2s;
+  transition: -webkit-transform 0.3s ease 2s;
+  transition: transform 0.3s ease 2s;
+  transition: transform 0.3s ease 2s, -webkit-transform 0.3s ease 2s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 .about__img {
@@ -1234,6 +1234,11 @@ main {
 
 .applications__item {
   margin-bottom: 20px;
+}
+
+.applications__title a {
+  color: black;
+  text-decoration: none;
 }
 
 .applications__btn {
