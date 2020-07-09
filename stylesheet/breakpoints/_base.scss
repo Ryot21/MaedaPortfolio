@@ -8,6 +8,7 @@ body {
   font-family: 'Amatic SC', 'Noto Sans JP', sans-serif;
 }
 
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -185,8 +186,8 @@ main {
     ) {
       background-color: $cBlack;
       transform: translateY(-50%) scaleX(0);
-      transition: transform 0.3s ease 10s;
-      transform-origin: left;
+      transition: transform 0.3s ease 2s;
+      transform-origin: right;
     }
   }
   &__img {
@@ -228,6 +229,10 @@ main {
   &__title {
     @extend .font-lr;
     @extend .mb-s;
+    a {
+      color: $cBlack;
+      text-decoration: none;
+    }
   }
   &__btn {
     text-align: center;
