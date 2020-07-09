@@ -125,8 +125,8 @@ main {
   z-index: 10;
 
   &.triggered {
-    background-color: white;
-    box-shadow: 20px 0 25px -10px black;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 20px 0 25px -10px rgba(0, 0, 0, 0.8);
   }
 
   &__nav {
@@ -188,11 +188,6 @@ main {
       transition: transform 0.3s ease 10s;
       transform-origin: left;
     }
-    &.inview {
-      &::before {
-        transform: translateY(-50%) scaleX(1);
-      }
-    }
   }
   &__img {
     height: 365px;
@@ -213,9 +208,12 @@ main {
   }
   &__texts {
     @extend .pb-s;
-    
+    &.inview {
+      & .about__title::before {
+          transform: translateY(-50%);
+      }
+    }
   }
-  
 }
 
 .applications {
@@ -332,17 +330,22 @@ main {
   position: fixed;
   top: 80%;
   transform: translateY(-50%);
+  transition: all 0.3s ease-in;
 
-  & a,
-  & span {
+  & .tween-animate-title {
     color: $cBlack;
     text-decoration: none !important;
     margin: 0 40px;
     vertical-align: middle;
+    letter-spacing: 2.4px;
   }
 
   &.left {
-    left: 50px;
+    left: -50px;
+
+    &.inview {
+      left: 50px;
+    }
 
     & .side__inner {
       transform: rotate(-90deg);
@@ -350,7 +353,11 @@ main {
     }
   }
   &.right {
-    right: 50px;
+    right: -50px;
+
+    &.inview {
+      right: 50px;
+    }
 
     & .side__inner {
       transform: rotate(90deg);

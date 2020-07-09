@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MaedaPortfolio</title>
+    <link rel="stylesheet" href="stylesheet/loader.css">
+    <script src="javascript/vendors/pace.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/vendors/bootstrap-reboot.css" />
     <link rel="stylesheet" href="stylesheet/vendors/swiper.min.css" />
@@ -16,17 +18,17 @@
         <div class="mobile-menu__cover"></div>
         <div class="nav-trigger"></div>
         <header class="header">
-          <div class="header__inner">
+          <div class="header__inner appear up">
               <div class="logo">
                 <img src="" alt="" class="logo__img">
                 <span class="logo__Maeda">Maeda</span>
-                <span class="logo__Portfoflio">Portfoflio</span>
+                <span class="logo__Portfoflio item">Portfoflio</span>
               </div>
               <nav class="header__nav">
                   <ul class="header__ul">
-                    <li class="header__li"><a href="#">About</a></li">
-                    <li class="header__li"><a href="#">Works</a></li">
-                    <li class="header__li">
+                    <li class="header__li item"><a href="#">About</a></li">
+                    <li class="header__li item"><a href="#">Works</a></li">
+                    <li class="header__li item">
                       <a class="btn filled" href="#">Blog</a>
                     </li">
                   </ul>
@@ -64,9 +66,9 @@
           <div id="main-content">
             <aside class="side left">
               <div class="side__inner">
-                <a class="Twitter icon"href="https://twitter.com/MaedaRyota71">Twitter</a>
-                <a class="Facebook icon"href="http://">Facebook</a>
-                <a class="Instagram icon"href="https://www.instagram.com/m.ryot21/?hl=ja">Instagram</a>
+                <a class="Twitter icon tween-animate-title"href="https://twitter.com/MaedaRyota71">Twitter</a>
+                <a class="Facebook icon tween-animate-title"href="http://">Facebook</a>
+                <a class="Instagram icon tween-animate-title"href="https://www.instagram.com/m.ryot21/?hl=ja">Instagram</a>
               </div>
             </aside>
             <main>
@@ -75,30 +77,32 @@
                   <div class="about__img cover-slide">
                     <img class="img-zoom" src="images/me.png" alt="">
                   </div>
-                  <div class="about__texts">
+                  <div class="about__texts appear right">
                     <div class="about__texts-inner">
-                      <div class="about__title main-title inview">
-                        <span class="red">abo</span><span>u</span><span class="yellow">t</span>
+                      <div class="about__title main-title item">
+                        <span class="red">abo</span>
+                        <span>u</span>
+                        <span class="yellow">t</span>
                       </div>
-                      <div class="about__sub sub-title">名前： Ryota Maeda</div>
-                      <div class="about__description">
+                      <div class="about__sub sub-title item">名前： Ryota Maeda</div>
+                      <div class="about__description item">
                         <p>年齢: 29歳(2020年現在)</p>
                         <p>GitHub: <a href="https://github.com/Ryot21">https://github.com/Ryot21</a></p>
                         <p>経歴: 2013年　城西大学理学部化学科卒業</p>
                         <p>　　: 2013~2020年　印刷会社</p>
                         <p>現在: エンジニアを目指して転職活動中！</p>
                       </div>
-                      <div class="about__btn">
+                      <div class="about__btn item">
                         <button class="btn solid">もっと詳しく</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </section>
-              <section class="applications content-width">
+              <section class="applications content-width appear right">
                 <div>
-                  <h2 class="main-title">My Portfoflio</h2>
-                  <p class="sub-title">いろいろ作成したらアップデートしていきます。</p>
+                  <h2 class="main-title tween-animate-title">My Portfoflio</h2>
+                  <p class="sub-title tween-animate-title">いろいろ作成したらアップデートしていきます。</p>
                 </div>　
 
                 <div class="applications__inner">
@@ -107,8 +111,8 @@
                     <div class="cover-slide hover-darken inview">
                       <div class="bg-img-zoom img-bg50" style="background-image: url(images/Poaner.jpg)"></div>
                     </div>
-                    <p class="applications__title">『 Poaner 』</p>
-                    <div class="applications__btn">
+                    <p class="applications__title item">『 Poaner 』</p>
+                    <div class="applications__btn item">
                       <button class="btn slide-bg">もっと詳しく</button>
                     </div>
                   </div>
@@ -117,8 +121,8 @@
                     <div class="cover-slide hover-darken inview">
                       <div class="bg-img-zoom img-bg50" style="background-image: url(images/FURIMA.jpg)"></div>
                     </div>
-                    <p class="applications__title">『 FURIMA 』</p>
-                    <div class="applications__btn">
+                    <p class="applications__title item">『 FURIMA 』</p>
+                    <div class="applications__btn item">
                       <button class="btn slide-bg">もっと詳しく</button>
                     </div>
                   </div>
@@ -127,8 +131,8 @@
                     <div class="cover-slide hover-darken inview">
                       <div class="bg-img-zoom img-bg50" style="background-image: url(images/PHP-twitter.jpg)"></div>
                     </div>
-                    <p class="applications__title">『 PHP-twitter 』</p>
-                    <div class="applications__btn">
+                    <p class="applications__title item">『 PHP-twitter 』</p>
+                    <div class="applications__btn item">
                       <button class="btn slide-bg">もっと詳しく</button>
                     </div>
                   </div>
@@ -138,29 +142,29 @@
               </section>
               <section class="hobby">
                 <div class="hobby__header">
-                  <h2 class="main-title">Hobby</h2>
-                  <p class="sub-title">ところで、私の趣味は...</p>
+                  <h2 class="main-title tween-animate-title">Hobby</h2>
+                  <p class="sub-title tween-animate-title">ところで、私の趣味は...</p>
                 </div>
-                <div class="hobby__inner">
+                <div class="hobby__inner appear up">
                   <div class="hobby__container">
-                    <div class="hobby__item">
+                    <div class="hobby__item item">
                       <div class="hobby__img"><img src="images/IMG_4104.JPG" alt=""></div>
                       <div class="hobby__title">Tennis</div>
                     </div>
-                    <div class="hobby__item">
+                    <div class="hobby__item item">
                         <div class="hobby__img"><img src="images/edgar-chaparro-kB5DnieBLtM-unsplash.jpg" alt=""></div>
                         <div class="hobby__title">NBA</div>
                     </div>
-                    <div class="hobby__item">
+                    <div class="hobby__item item">
                         <div class="hobby__img"><img src="images/joshua-peacock-aMuXhFkbxEw-unsplash.jpg" alt=""></div>
                         <div class="hobby__title">Baseball</div>
                     </div>
-                    <div class="hobby__item">
+                    <div class="hobby__item item">
                         <div class="hobby__img"><img src="images/IMG_4152.JPG" alt=""></div>
                         <div class="hobby__title">Programming</div>
                     </div>
   
-                    <div class="hobby__btn">
+                    <div class="hobby__btn item">
                       <a class="btn-cubic"><span class="hovering">Now, Hovering</span><span class="default">Button</span></a>
                     </div>
                   </div>
@@ -169,25 +173,25 @@
             </main>
             <aside class="side right">
                 <div class="side__inner">
-                  <span>&copy;MAEDA　　　　　　　</span>
+                  <span class="tween-animate-title">&copy;MAEDA</span>
                 </div>
             </aside>
           </div>
         </div>
-        <footer class="footer">
+        <footer class="footer appear up">
            <div class="logo">
              <img src="" alt="" class="logo__img">
              <span class="logo__Maeda">Maeda</span>
-             <span class="logo__Portfoflio">Portfoflio</span>
+             <span class="logo__Portfoflio item">Portfoflio</span>
            </div>
            <nav class="footer__nav">
              <ul class="footer__ul">
-               <li class="footer__li"><a href="#">About</a></li">
-               <li class="footer__li"><a href="#">Works</a></li">
-               <li class="footer__li"><a href="#">Blog</a></li">
-               <li class="footer__li"><a href="#">Contact</a></li">
+               <li class="footer__li item"><a href="#">About</a></li">
+               <li class="footer__li item"><a href="#">Works</a></li">
+               <li class="footer__li item"><a href="#">Blog</a></li">
+               <li class="footer__li item"><a href="#">Contact</a></li">
              </ul>
-             <div class="footer__copyright">
+             <div class="footer__copyright item">
                &copy;　Maeda　R
              </div>
            </nav>
